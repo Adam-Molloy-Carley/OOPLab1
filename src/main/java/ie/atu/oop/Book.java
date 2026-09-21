@@ -18,11 +18,25 @@ public class Book
 
     public void borrowBook()
     {
-        if(available==true)
-        {
+        if(available==true) {
             available = false;
+            System.out.println(title + " borrowed successfully ");
+        }
+
+        else {
+            System.out.println(title + " on Loan ");
         }
     }
+
+    private static Book createBook(String title, String author, int pageCount)
+    {
+        Book book = new Book();
+        book.title = title;
+        book.author = author;
+        book.pageCount = pageCount;
+        return book;
+    }
+
 }
 
 
