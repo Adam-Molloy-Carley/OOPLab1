@@ -1,0 +1,16 @@
+#OOP Lab 1: Java Book Transfer
+
+The Book Tracker is capable of creating a book and storing its availability, then when called borrows the book. 
+
+##Object Model:
+Book is defined as an object containing Title, Author, Page count and availability.
+
+It contains a method to construct pre-coded books aswell as a function in main method to actively create and store a book througb main.
+
+There is a borrowbook() method to borrow these books which can be printed through displayDetails() method.
+
+createBook must be seperate from the main function as it is not desireable to be ran automatically 
+in the main fucntion as it requires input from the main function.
+
+borrowBook checks if the book is available when called, if it is it changes its status to borrowed 
+  and when called again prints its borrowed status.
