@@ -1,11 +1,21 @@
 package ie.atu.oop;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 public class Main {
     public static void main(String[] args) {
 
-            System.out.println("Hello World");
+        Book firstBook = new Book();
+        firstBook.title = "DarkBlade";
+        firstBook.author = "Dan-Abnett";
+        firstBook.pageCount = 400;
 
+        firstBook.displayDetails();
+
+        Book secondBook = new Book();
+        secondBook.title = "VerminSlayer";
+        secondBook.author = "William-King";
+        firstBook.pageCount = 500;
+
+        secondBook.displayDetails();
     }
 }
