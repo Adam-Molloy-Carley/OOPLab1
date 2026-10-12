@@ -14,3 +14,18 @@ in the main fucntion as it requires input from the main function.
 
 borrowBook checks if the book is available when called, if it is it changes its status to borrowed 
   and when called again prints its borrowed status.
+
+#OOP Lab 3:
+
+The book tracker is now capable of loaning and returning books and keeping book status to hand.
+
+Constructor checks for null before calling isBlank() as if the information to the left of the || in the parameters is true, it will avoid calling the second part of the parameter.
+
+author, title and pageCount are final as their values are to remain the same during the programs runtime whereas status is potentially supposed to change
+
+Book uses borrowBook and returnBook rather than a status setter as these two methods are built to avoid conflicts or errors during runtime, where as a status setter can cause conflicts or bugs.
+
+a succesful loan sets the books status to on_loan, a rejected loan will either keep the book as avilable and a rejected return will keep the book as on_loan
+
+During debug, because the 15 day loan is a part of a try/catch statment, when it catches the error
+it does not continue the program
