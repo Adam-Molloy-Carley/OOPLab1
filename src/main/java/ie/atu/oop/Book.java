@@ -1,42 +1,58 @@
 package ie.atu.oop;
 
-public class Book
-{
-    public String title;
-    public String author;
-    public int pageCount;
-    public boolean available = true;
+public class Book {
+    private String title;
+    private String author;
+    private int pageCount;
 
-    public void displayDetails()
-    {
-        System.out.println("Title: " + title);
-        System.out.println("Author: " + author);
-        System.out.println("Page Count: " + pageCount);
-        System.out.println("Is Book Available: " + available);
-        System.out.println("\n");
+    public Book(String title, String author, int pageCount) {
+        this.title = title;
+        this.author = author;
+        this.pageCount = pageCount;
     }
 
-    public void borrowBook()
-    {
-        if(available==true) {
-            available = false;
-            System.out.println(title + " borrowed successfully ");
-        }
-
-        else {
-            System.out.println(title + " on Loan ");
-        }
-    }
-
-    private static Book createBook(String title, String author, int pageCount)
-    {
-        Book book = new Book();
-        book.title = title;
-        book.author = author;
-        book.pageCount = pageCount;
-        return book;
-    }
-
+    public String getTitle() { return title; }
+    public String getAuthor() { return author; }
+    public int getPageCount() { return pageCount; }
 }
+
+//public class Book
+//{
+//    public String title;
+//    public String author;
+//    public int pageCount;
+//    public boolean available = true;
+//
+//    public void displayDetails()
+//    {
+//        System.out.println("Title: " + title);
+//        System.out.println("Author: " + author);
+//        System.out.println("Page Count: " + pageCount);
+//        System.out.println("Is Book Available: " + available);
+//        System.out.println("\n");
+//    }
+//
+//    public void borrowBook()
+//    {
+//        if(available==true) {
+//            available = false;
+//            System.out.println(title + " borrowed successfully ");
+//        }
+//
+//        else {
+//            System.out.println(title + " on Loan ");
+//        }
+//    }
+//
+//    private static Book createBook(String title, String author, int pageCount)
+//    {
+//        Book book = new Book();
+//        book.title = title;
+//        book.author = author;
+//        book.pageCount = pageCount;
+//        return book;
+//    }
+//
+//}
 
 
