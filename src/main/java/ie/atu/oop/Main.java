@@ -4,8 +4,9 @@ public class Main {
     public static void main(String[] args) {
         Book book = new Book("Dune", "Frank Herbert", 412);
         book.borrowBook();
+        book.returnBook();
         try {
-            book.borrowBook();
+            book.returnBook();
         } catch (IllegalStateException ex) {
             System.out.println(ex.getMessage());
         }
