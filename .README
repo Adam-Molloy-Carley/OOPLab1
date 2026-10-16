@@ -5,17 +5,17 @@ The Book Tracker is capable of creating a book and storing its availability, the
 ##Object Model:
 Book is defined as an object containing Title, Author, Page count and availability.
 
-It contains a method to construct pre-coded books aswell as a function in main method to actively create and store a book througb main.
+It contains a method to construct pre-coded books as well as a function in main method to actively create and store a book througb main.
 
 There is a borrowbook() method to borrow these books which can be printed through displayDetails() method.
 
-createBook must be seperate from the main function as it is not desireable to be ran automatically 
-in the main fucntion as it requires input from the main function.
+createBook must be separate from the main function as it is not desirable to be ran automatically
+in the main function as it requires input from the main function.
 
 borrowBook checks if the book is available when called, if it is it changes its status to borrowed 
   and when called again prints its borrowed status.
 
-#OOP Lab 3:
+#OOP Lab '2'':
 
 The book tracker is now capable of loaning and returning books and keeping book status to hand.
 
@@ -27,5 +27,25 @@ Book uses borrowBook and returnBook rather than a status setter as these two met
 
 a succesful loan sets the books status to on_loan, a rejected loan will either keep the book as avilable and a rejected return will keep the book as on_loan
 
-During debug, because the 15 day loan is a part of a try/catch statment, when it catches the error
+During debug, because the 15 day loan is a part of a try/catch statement, when it catches the error
 it does not continue the program
+
+lab '3':
+
+Lab 4/3
+Changes the Library-service from working with directly supplied books to having control of a list of books.
+
+List <Book> holds the data for the books library service will be using.
+
+Final does not bar .add from modifying the array list as book simply points to the arraylist and is not itself a variable with final.
+
+The enhanced for loop variable represents each book in the list, so iterates for each unique book on the list.
+
+findBookByTitle returns the title of a book for a known title and returns null for an unknown value so as to alert the error catching system.
+
+its more economical for removeBook to use pre-established methods and functions (findBookByTitle) to perform tasks than to produce new and bespoke code for each task. Better for modular design.
+
+Main runs the pre-established systems that originate from Book and Library-service. Library-service tracks listed books and modifies this list which is printed through main during the codes runtime.
+Book defines the book object e.g what book should be, what information it should store and the methods and functions available to the book variable.
+
+program has a final count of 2, build succeeded. No AI was used.
