@@ -30,7 +30,6 @@ a succesful loan sets the books status to on_loan, a rejected loan will either k
 During debug, because the 15 day loan is a part of a try/catch statement, when it catches the error
 it does not continue the program
 
-lab '3':
 
 Lab 4/3
 Changes the Library-service from working with directly supplied books to having control of a list of books.
