@@ -52,6 +52,7 @@ public class LibraryService {
     public List<Book> getAllBooks() {
         return new ArrayList<>(books);
     }
+    public List<Book> getBooks() { return new ArrayList<>(books); }
 
     public boolean removeBook(String title){
         Book book = findBookByTitle(title);
