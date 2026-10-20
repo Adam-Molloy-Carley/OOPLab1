@@ -48,3 +48,18 @@ Main runs the pre-established systems that originate from Book and Library-servi
 Book defines the book object e.g what book should be, what information it should store and the methods and functions available to the book variable.
 
 program has a final count of 2, build succeeded. No AI was used.
+
+Lab 5:
+Adds exception handling and CSV Persistence to the application.
+
+save() is a files method and path.of is a path method to tell guide the program to books.csv
+
+the biggest difference between uncheckedNumberFormatException and check IOException is that IOException must be caught or thrown, whereas NumberFormatException does not
+
+The Throw statement inside of Book is used to signify when a problem occurs, whereas try/catch tries to deal with problem when it occurs.
+
+Path represents the locations of files whereas Files provides various methods to of changing and working with files.
+
+csv format is title, author, pagecount, status:
+Dune,Frank Herbert,412,ON_LOAN
+Clean Code,Robert C. Martin,464,AVAILABLE
